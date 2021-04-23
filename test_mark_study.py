@@ -12,7 +12,7 @@ class Test_demo2():
         b=-1
         assert a!=b
         print("这是打标签为smoke的用例")
-
+    @pytest.mark.run(order=1)
     @pytest.mark.smoke
     @pytest.mark.demo
     def test_three(self):
